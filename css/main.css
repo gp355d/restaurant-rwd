@@ -13,7 +13,9 @@ ul {
     list-style-type: none;
 }
 
-h1 {
+h1,
+h2,
+h3 {
     margin: 0;
 }
 
@@ -28,7 +30,7 @@ h1 {
     height: 56px;
     background: rgba(0, 0, 0, 0.75);
     position: fixed;
-    z-index: 1;
+    z-index: 2;
 }
 
 .container {
@@ -98,10 +100,58 @@ h1 {
     display: inline-block;
 }
 
+
+/*content版面*/
+
+.content {
+    background-color: #EFE9E7;
+}
+
+.content>.container {
+    padding: 50px 30px 60px 30px;
+}
+
+.feature-title {
+    font-size: 20px;
+    color: #3d1101;
+    text-align: center;
+}
+
+hr {
+    display: none;
+}
+
+.intro {
+    color: #3d1101;
+    font-size: 18px;
+    text-align: center;
+}
+
+.features-img {
+    margin-top: 31px;
+    border-radius: 50%;
+}
+
+.intro-title {
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+    color: #3d1101;
+}
+
+.intro-title+p {
+    margin-top: 11px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    text-align: left;
+    color: #3d1101;
+}
+
 @media(min-width:767px) {
     .container {
         max-width: 767px;
         padding: 17px 13px 15px 13px;
+        text-align: center;
     }
     .banner {
         background-image: url(../image/header_desktop.png);
@@ -111,7 +161,7 @@ h1 {
         padding: 123px 154px 145px 154px;
     }
     br {
-        display: none;
+        display: block;
     }
     #nav img {
         display: none;
@@ -139,6 +189,33 @@ h1 {
         margin: 0;
         font-size: 8px;
     }
+    .feature-title {
+        position: relative;
+        z-index: 1;
+        background-color: aquamarine;
+        display: inline-block;
+    }
+    .intro {
+        width: 30.333%;
+        float: left;
+    }
+    /* .t {
+        width: 60%;
+        margin: 0 auto;
+        height: 1px;
+        position: relative;
+    }
+    .t hr {
+        display: block;
+        position: absolute;
+        top: 50%;
+        /* border: none;
+        color: #000;
+        background-color: #000;
+        text-align: center;
+        margin: 0 auto; 
+        z-index: 0;
+    } */
 }
 
 @media(min-width:1024px) {
