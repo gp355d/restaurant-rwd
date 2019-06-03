@@ -147,6 +147,54 @@ hr {
     color: #3d1101;
 }
 
+
+/*cheif content版面*/
+
+.chief-feature-img {
+    height: 460px;
+    background-image: url(../image/main_chef_brown.png);
+    background-size: cover;
+    background-position: right;
+}
+
+.name {
+    background: #3D1101;
+    font-size: 10px;
+}
+
+.name>.container {
+    padding: 30px;
+}
+
+.title-cn {
+    text-align: left;
+    font-size: 20px;
+    color: #efe9e7;
+    line-height: 32px;
+}
+
+.title-en {
+    text-align: left;
+    font-size: 16px;
+    color: #efe9e7;
+}
+
+.cherf-intro {
+    width: 100%;
+    font-size: 8px;
+}
+
+.cherf-intro>.container {
+    padding: 0;
+    background: #3D1101;
+}
+
+.cherf-intro>p {
+    font-size: 2em;
+    color: #EFE9E7;
+    text-align: left;
+}
+
 @media(min-width:767px) {
     .container {
         max-width: 767px;
@@ -208,6 +256,19 @@ hr {
     .content>.intro:nth-last-child(2) {
         padding-right: 60px;
     }
+    .chief-feature {
+        padding-left: 2%;
+        background: #3D1101;
+    }
+    .chief-feature-img {
+        float: left;
+        width: 48%;
+    }
+    .name {
+        float: left;
+        width: 50%;
+        height: 460px;
+    }
     /* .t {
         width: 60%;
         margin: 0 auto;
@@ -238,5 +299,18 @@ hr {
         padding-bottom: 145px;
         padding-left: 282px;
         padding-right: 282px;
+    }
+    .chief-feature {
+        padding-left: 2%;
+        background: #3D1101;
+    }
+    .chief-feature-img {
+        float: left;
+        width: 48%;
+    }
+    .name {
+        float: left;
+        width: 50%;
+        height: 460px;
     }
 }
