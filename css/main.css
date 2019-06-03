@@ -195,9 +195,18 @@ hr {
         background-color: aquamarine;
         display: inline-block;
     }
+    .content {
+        padding: 0 30px;
+    }
     .intro {
-        width: 30.333%;
+        width: 33.333%;
         float: left;
+    }
+    .content>.intro:nth-last-child(3) {
+        padding-right: 60px;
+    }
+    .content>.intro:nth-last-child(2) {
+        padding-right: 60px;
     }
     /* .t {
         width: 60%;
