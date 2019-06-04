@@ -221,6 +221,122 @@ hr {
     line-height: 24px;
 }
 
+
+/*map內容區塊*/
+
+.map {
+    height: 386px;
+    margin: 0 auto;
+    background-image: url(../image/Map.png);
+    background-position-x: -21px;
+}
+
+.map-position {
+    background: rgba(250, 250, 250, 0.70);
+}
+
+.map-position>.container {
+    padding-bottom: 0;
+    padding-top: 43px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.map-title {
+    font-size: 24px;
+    color: #3D1101;
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.form-table {}
+
+.form-table>.container {
+    padding: 30px 10px 56px 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    height: 32px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-shadow: inset 0px 1px 0px 0px #ECECEC;
+    border-radius: 3px;
+    margin-bottom: 12px;
+}
+
+input[type="radio"] {
+    font-family: PingFangTC-Light;
+    font-size: 14px;
+    color: #3D1101;
+    border: 1px solid #4A90E2;
+    margin-right: 36px;
+}
+
+label {
+    height: 20px;
+    font-family: PingFangTC-Light;
+    font-size: 14px;
+    color: #3D1101;
+    display: block;
+    margin-bottom: 6px;
+}
+
+label:nth-first-child(2) {
+    color: green;
+}
+
+.food {
+    width: 14px;
+    float: left;
+    margin-right: 6px;
+}
+
+.food-title {
+    width: 300px;
+    margin-bottom: 8px;
+}
+
+.food-check-radio {
+    height: 20px;
+    margin-bottom: 30px;
+}
+
+#food-check-yes,
+#food-check-no {
+    float: left;
+}
+
+.form-table>.container {
+    padding-bottom: 50px;
+}
+
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    width: 70px;
+    height: 32px;
+    font-family: PingFangTC-Regular;
+    font-size: 14px;
+    color: #FFFFFF;
+    border-radius: 3px;
+    border: none;
+}
+
+.btn-area {
+    margin: 0 auto;
+    float: right;
+}
+
+.reset-btn {
+    background: rgba(0, 0, 0, 0.35);
+    margin-right: 11px;
+}
+
+.send-btn {
+    background: #F56C23;
+}
+
 @media(min-width:767px) {
     .container {
         max-width: 767px;
@@ -306,6 +422,16 @@ hr {
         float: left;
         padding-right: 20px;
     }
+    .map {
+        width: 50%;
+        float: left;
+    }
+    .form-table {
+        width: 48%;
+        margin-left: 2%;
+        float: left;
+        text-align: left;
+    }
     /* .t {
         width: 60%;
         margin: 0 auto;
@@ -352,5 +478,11 @@ hr {
     }
     .name>.container {
         min-width: 35%;
+    }
+    .map {
+        width: 50%;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin: 0 auto;
     }
 }
