@@ -486,12 +486,23 @@ footer {
     display: block;
 }
 
-.content>input {
+.content>.container {
+    padding: 52px 10px 0 10px;
+}
+
+.container>input {
     width: 268px;
     margin: 0 auto;
     border: 2px solid #3D1101;
     margin-top: 24px;
 }
+
+
+/* .container>i {
+    width: 32px;
+    height: 32px;
+    background: #3D1101;
+} */
 
 .content>span {
     display: block;
