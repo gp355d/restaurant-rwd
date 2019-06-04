@@ -15,7 +15,8 @@ ul {
 
 h1,
 h2,
-h3 {
+h3,
+p {
     margin: 0;
 }
 
@@ -181,19 +182,43 @@ hr {
 
 .cherf-intro {
     width: 100%;
-    font-size: 8px;
-}
-
-
-/* .cherf-intro>.container {
-    padding: 0;
-    background: #3D1101;
-} */
-
-.cherf-intro {
     font-size: 16px;
     color: #EFE9E7;
     text-align: left;
+}
+
+.recommend-title {
+    text-align: center;
+    color: #3D1101;
+    padding-bottom: 32px;
+}
+
+.recommend-colum>img {
+    float: left;
+    border-radius: 50%;
+}
+
+.recommend-colum>.subtitle {
+    float: left;
+    line-height: 4;
+    color: #3d1101;
+    font-size: 18px;
+    padding-left: 12px;
+}
+
+.message {
+    float: left;
+    font-size: 16px;
+    text-align: left;
+    padding-left: 80px;
+    color: #3d1101;
+}
+
+.commit-name {
+    float: right;
+    font-size: 16px;
+    color: rgba(61, 17, 0, 0.75);
+    line-height: 24px;
 }
 
 @media(min-width:767px) {
@@ -272,6 +297,14 @@ hr {
     }
     .name>.container {
         min-width: 50%;
+    }
+    .recommend>.container {
+        padding-top: 50px;
+    }
+    .recommend-colum {
+        width: 33.3333%;
+        float: left;
+        padding-right: 20px;
     }
     /* .t {
         width: 60%;
