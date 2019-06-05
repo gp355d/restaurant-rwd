@@ -520,7 +520,6 @@ footer {
 }
 
 .checkout-area {
-    float: right;
     margin-right: 12px;
 }
 
@@ -554,6 +553,86 @@ footer {
     text-align: center;
     background: #FF5E45;
     border: 1px solid #EFE9E7;
+}
+
+.buy-area {
+    float: right;
+}
+
+.meal {
+    background: #EFE9E7;
+    box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
+}
+
+.meal-img {
+    position: relative;
+}
+
+.line {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    transform: rotate(-315deg);
+    background: #00CC99;
+}
+
+.meal>i:first-child {
+    position: absolute;
+    z-index: 2;
+    margin-top: 9px;
+    margin-left: 9px;
+    color: #fff;
+}
+
+.meal-title-cn {
+    font-size: 20px;
+    color: #3D1101;
+    text-align: center;
+}
+
+.meal-title-en {
+    font-size: 16px;
+    color: #3D1101;
+    text-align: center;
+}
+
+.meal-list {
+    width: 280px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+
+/* .meal-list>.container {
+    padding: 8px 10px 10px 10px;
+} */
+
+.center-line {
+    display: block;
+    width: 91px;
+    height: 3px;
+    border: 1px solid #3D1101;
+    background: #3d1101;
+}
+
+.price {
+    font-size: 20px;
+    font-family: 'Roboto-Light';
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 13px;
+}
+
+.buy {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    border: 2px solid #FF5E45;
+    border-radius: 3px;
+    color: #FF5E45;
+    text-align: center;
+    line-height: 2;
+    margin-bottom: 10px;
 }
 
 
