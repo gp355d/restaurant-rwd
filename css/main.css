@@ -803,20 +803,29 @@
     } */
             .meal {
                 float: left;
-                width: 50%;
-                margin: 0 auto;
+                width: 50.3333%;
+                /* margin: 0 auto; */
             }
             .meal-img {
-                width: 80%;
+                /* width: 80%; */
             }
         }
         
-        @media(min-width:500px) and (max-width:766px) {
+        @media(min-width:500px) and (max-width:584px) {
             .meal {
-                width: 500px;
+                min-width: 350px;
             }
             .meal-img {
-                max-width: 100%;
+                width: 100%;
+            }
+        }
+        
+        @media(min-width:585px) and (max-width:766px) {
+            .meal {
+                min-width: 400px;
+            }
+            .meal-img {
+                min-width: 80%;
             }
         }
         
