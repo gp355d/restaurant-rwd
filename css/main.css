@@ -355,7 +355,7 @@
 } */
         
         .footer {
-            background: #EFE9E7;
+            /* background: #EFE9E7; */
         }
         
         .footer>.container {
@@ -476,10 +476,12 @@
         }
         
         .content>.container {
+            min-width: 100%;
+            /* margin: 0 auto; */
             padding: 52px 10px 0 10px;
         }
         
-        .searcharea>input {
+        .out-area>input {
             width: calc(100% - 32px);
             margin: 0 auto;
             border: 2px solid #3D1101;
@@ -542,6 +544,11 @@
         }
         
         .buy-area {
+            width: 100%;
+            margin-top: 20px;
+        }
+        
+        .function {
             float: right;
         }
         
@@ -550,7 +557,8 @@
             margin: 0 auto;
             background: #EFE9E7;
             box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
-            margin-top: 34px;
+            margin-top: 33px;
+            margin-bottom: 30px;
         }
         
         .meal-img {
@@ -625,6 +633,8 @@
             width: 100%;
             margin: 0 auto;
             padding-bottom: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
         }
         /* .meal-list>.container {
     padding: 8px 10px 10px 10px;
@@ -803,11 +813,17 @@
     } */
             .meal {
                 float: left;
-                min-width: 50%;
-                margin: 0 auto;
+                margin-right: 20px;
+                /* margin-top: 0; */
+                /* min-width: 50%; */
+                /* margin: 0 auto; */
             }
             .meal-img {
+                max-width: none;
                 /* width: 80%; */
+            }
+            .searcharea>.meal:nth-child(2) {
+                margin-top: 0;
             }
         }
         
@@ -825,7 +841,7 @@
                 min-width: 400px;
             }
             .meal-img {
-                min-width: 80%;
+                min-width: 100%;
             }
         }
         
@@ -869,5 +885,26 @@
             .name1 {
                 float: left;
                 width: 47%;
+            }
+            .meal-category {
+                float: left;
+                width: 25%;
+            }
+            .searcharea {
+                width: 73%;
+                float: right;
+            }
+            .meal {
+                margin-top: 20px;
+                margin-right: 12px;
+            }
+            .out-area {
+                width: 70%;
+                float: left;
+            }
+            .buy-area {
+                width: 30%;
+                float: left;
+                margin-top: 0;
             }
         }
