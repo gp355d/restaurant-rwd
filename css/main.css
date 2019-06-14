@@ -44,48 +44,81 @@ p {
     float: left;
 }
 
+#logo h1 a {
+    width: 120px;
+    height: 24px;
+    background: url(/image/logo_w\(null\).svg);
+    /* no-repeat; */
+    display: block;
+    margin-top: 16px;
+    margin-left: 42px;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+}
 #nav {
     float: right;
 }
-
 #nav .menu {
     max-height: 0;
     overflow: hidden;
     /* transition: max-height 2.3s; */
+    
     margin-top: 1px;
     position: absolute;
     z-index: 5;
     top: 54px;
     left: 0;
     right: 0;
-    background: rgb(49, 49, 49);
+    padding: 0;
+    background: #3d1101;
+    /* background: rgb(49, 49, 49); */
+    
     text-align: center;
 }
-
 #nav .menu li {
     float: none;
+    border-bottom: 1px dashed white;
 }
-
+#nav .menu li:hover {
+    background: white;
+}
 #nav .menu a {
+    display: block;
     transition: all 0.3s;
     color: white;
+    text-decoration: none;
 }
-
+#nav .menu a:hover {
+    color: #DB4437;
+}
 
 /* #nav li a:hover {
     background: #69ca62;
 } */
-
 .showmenu {
-    display: block;
+    /* display: block; */
+    
     float: right;
+    background: none;
+    border: none;
+    display: inline-block;
 }
-
+.showmenu .icon-bar {
+    background-color: #f56c23;
+    display: block;
+    height: 4px;
+    margin: 0 auto 4px;
+    width: 30px;
+}
 .menu-show {
     /* display: block; */
+    
     max-height: 500px !important;
 }
-
 
 /* .show-menu1 {
     display: block;
@@ -95,7 +128,6 @@ p {
     display: none;
     color: green;
 } */
-
 
 /* .menu1 {
     display: none;
@@ -112,7 +144,6 @@ p {
     width: 200px;
     text-align: center;
 } */
-
 
 /* 
 .menu1 li a {
@@ -133,9 +164,7 @@ p {
     width: 30px;
 } */
 
-
 /*banner版面*/
-
 .banner {
     width: 100%;
     height: 420px;
@@ -144,11 +173,9 @@ p {
     background-position: center bottom;
     position: relative;
 }
-
 .banner>.container {
     padding: 113px 10px 113px 10px;
 }
-
 .sloganbg {
     width: 300px;
     margin: 0 auto;
@@ -156,72 +183,58 @@ p {
     background: rgba(0, 0, 0, 0.35);
     color: #FFFFFFFF;
 }
-
 .slogan-title {
     font-size: 36px;
     padding-top: 20px;
 }
-
 .slogan-subtitle {
     display: inline-block;
     margin: 16px 54px 20px 54px;
     font-size: 8px;
     text-align: center;
 }
-
 .slogan-subtitle>p {
     font-size: 2em;
 }
-
 .slogan-subtitle>p:first-child {
     margin: 0;
 }
-
 .slogan-subtitle>p:nth-child(3) {
     padding: 0;
     margin: 0;
     display: inline-block;
 }
 
-
 /*content版面*/
-
 .content {
     background-color: #EFE9E7;
 }
-
 .content>.container {
     padding: 50px 30px 60px 30px;
 }
-
 .feature-title {
     font-size: 20px;
     color: #3d1101;
     text-align: center;
 }
-
 .outer hr {
     display: none;
 }
-
 .intro {
     color: #3d1101;
     font-size: 18px;
     text-align: center;
 }
-
 .features-img {
     margin-top: 31px;
     border-radius: 50%;
 }
-
 .intro-title {
     font-size: 18px;
     margin-top: 20px;
     text-align: center;
     color: #3d1101;
 }
-
 .intro-title+p {
     margin-top: 11px;
     margin-bottom: 40px;
@@ -230,56 +243,46 @@ p {
     color: #3d1101;
 }
 
-
 /*cheif content版面*/
-
 .chief-feature-img {
     height: 460px;
     background-image: url(../image/main_chef_brown.png);
     background-size: cover;
     background-position: right;
 }
-
 .name {
     background: #3D1101;
     font-size: 10px;
 }
-
 .name>.container {
     padding: 30px;
 }
-
 .title-cn {
     text-align: left;
     font-size: 20px;
     color: #efe9e7;
     line-height: 32px;
 }
-
 .title-en {
     text-align: left;
     font-size: 16px;
     color: #efe9e7;
 }
-
 .cherf-intro {
     width: 100%;
     font-size: 16px;
     color: #EFE9E7;
     text-align: left;
 }
-
 .recommend-title {
     text-align: center;
     color: #3D1101;
     padding-bottom: 32px;
 }
-
 .recommend-colum>img {
     float: left;
     border-radius: 50%;
 }
-
 .recommend-colum>.subtitle {
     float: left;
     line-height: 4;
@@ -287,7 +290,6 @@ p {
     font-size: 18px;
     padding-left: 12px;
 }
-
 .message {
     float: left;
     font-size: 16px;
@@ -295,7 +297,6 @@ p {
     padding-left: 80px;
     color: #3d1101;
 }
-
 .commit-name {
     float: right;
     font-size: 16px;
@@ -303,9 +304,7 @@ p {
     line-height: 24px;
 }
 
-
 /*map內容區塊*/
-
 .map {
     height: 386px;
     margin: 0 auto;
@@ -314,31 +313,25 @@ p {
     background-repeat: no-repeat;
     background-position: center;
 }
-
 .map-position {
     background: rgba(250, 250, 250, 0.70);
 }
-
 .map-position>.container {
     padding-bottom: 0;
     padding-top: 43px;
     padding-left: 10px;
     padding-right: 10px;
 }
-
 .map-title {
     font-size: 24px;
     color: #3D1101;
     text-align: center;
     margin-bottom: 38px;
 }
-
 .form-table {}
-
 .form-table>.container {
     padding: 30px 10px 56px 10px;
 }
-
 input[type="text"] {
     width: 100%;
     height: 32px;
@@ -348,7 +341,6 @@ input[type="text"] {
     border-radius: 3px;
     margin-bottom: 12px;
 }
-
 input[type="radio"] {
     font-family: PingFangTC-Light;
     font-size: 14px;
@@ -356,7 +348,6 @@ input[type="radio"] {
     border: 1px solid #4A90E2;
     margin-right: 36px;
 }
-
 label {
     height: 20px;
     font-family: PingFangTC-Light;
@@ -365,36 +356,29 @@ label {
     display: block;
     margin-bottom: 6px;
 }
-
 label:nth-first-child(2) {
     color: green;
 }
-
 .food {
     width: 14px;
     float: left;
     margin-right: 6px;
 }
-
 .food-title {
     width: 300px;
     margin-bottom: 8px;
 }
-
 .food-check-radio {
     height: 20px;
     margin-bottom: 30px;
 }
-
 #food-check-yes,
 #food-check-no {
     float: left;
 }
-
 .form-table>.container {
     padding-bottom: 50px;
 }
-
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -406,71 +390,57 @@ input[type="submit"] {
     border-radius: 3px;
     border: none;
 }
-
 .btn-area {
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 50px;
     float: right;
 }
-
 .reset-btn {
     background: rgba(0, 0, 0, 0.35);
     margin-right: 11px;
 }
-
 .send-btn {
     background: #F56C23;
 }
 
-
 /*footer區塊*/
-
 .intro-restaurant {
     width: 235px;
     float: left;
     margin-right: 20px;
 }
-
 .intro-restaurant>p {
     width: 235px;
 }
-
 .countus {
     width: 235px;
     float: left;
 }
-
 .countus>ul {
     width: 235px;
 }
-
 
 /* .name1 {
     margin-top: 0;
     width: 245px;
     float: right;
 } */
-
 .footer {
     background: #EFE9E7;
 }
-
 .footer>.container {
     padding: 50px 11px 50px 10px;
 }
-
 .intro-restaurant {
     width: 100%;
     margin: 0 auto;
 }
-
 .intro-restaurant>.about {
     text-align: left;
     font-size: 24px;
     color: #3D1101;
 }
-
 .intro-restaurant>p {
     width: 100%;
     height: 84px;
@@ -479,19 +449,16 @@ input[type="submit"] {
     color: #3D1101;
     margin-top: 16px;
 }
-
 .countus {
     width: 100%;
     margin: 0 auto;
 }
-
 .countus>.title {
     font-size: 24px;
     color: #3D1101;
     text-align: left;
     margin-bottom: 16px;
 }
-
 .countus>ul {
     width: 100%;
     padding-left: 0;
@@ -501,7 +468,6 @@ input[type="submit"] {
     list-style-type: disc;
     line-height: 1.4;
 }
-
 .name1 {
     width: 100%;
     font-size: 49px;
@@ -509,64 +475,51 @@ input[type="submit"] {
     margin-bottom: 22px;
     float: right;
 }
-
 .name1>img {
     /* width: 245px;
             height: 49px; */
+    
     float: right;
 }
-
 .social-media {
     float: right;
 }
-
 .social-media li {
     float: left;
     margin-left: 12px;
 }
-
 .social-media li i {
     font-size: 36px;
 }
-
 .fab.fa-google-plus-square {
     color: #DB4437;
 }
-
 .fab.fa-twitter-square {
     color: #41ABE1;
 }
-
 .fab.fa-facebook-square {
     color: #3A5795;
 }
 
-
 /*order頁面*/
-
 .order-title {
     font-size: 20px;
     color: #3D1101;
     line-height: 32px;
 }
-
 .category {
     padding: 0;
 }
-
 .category li {
     margin: 0 auto;
     border-bottom: 1px solid #3d1101;
 }
-
 .category li:nth-last-child(1) {
     background: #3D1101;
 }
-
 .category li:nth-last-child(1) a {
     color: #fff;
 }
-
 .category a {
     font-size: 16px;
     color: #3D1101;
@@ -574,18 +527,16 @@ input[type="submit"] {
     text-decoration: none;
     display: block;
 }
-
 .content>.container {
     min-width: 100%;
     /* margin: 0 auto; */
+    
     padding: 52px 10px 0 10px;
 }
-
 .meal-category>.order-title>i {
     margin-right: 15px;
     ;
 }
-
 .out-area>input {
     width: calc(100% - 32px);
     margin: 0 auto;
@@ -594,44 +545,36 @@ input[type="submit"] {
     border-right: 0;
     float: left;
 }
-
 .searcharea {
     width: 100%;
     margin-top: 24px;
     margin-bottom: 20px;
 }
-
 .search {
     width: 32px;
     height: 32px;
     background: #3D1101;
     border: 0;
 }
-
 .search>i {
     color: #fff;
 }
-
 .checkout-area {
     margin-right: 12px;
 }
-
 .checkout-area i {
     position: relative;
 }
-
 .checkout a {
     text-decoration: none;
     font-size: 16px;
     color: #3D1101;
 }
-
 .checkout::after {
     content: "|";
     margin-left: 12px;
     margin-right: 12px;
 }
-
 .num {
     font-size: 12px;
     color: #FFFFFF;
@@ -647,16 +590,13 @@ input[type="submit"] {
     background: #FF5E45;
     border: 1px solid #EFE9E7;
 }
-
 .buy-area {
     width: 100%;
     margin-top: 20px;
 }
-
 .function {
     float: right;
 }
-
 .meal {
     width: 300px;
     margin: 0 auto;
@@ -667,12 +607,10 @@ input[type="submit"] {
     position: relative;
     z-index: 2;
 }
-
 .meal-img {
     width: 100%;
     /* display: block;*/
 }
-
 .meal>i:first-child {
     position: absolute;
     z-index: 2;
@@ -680,19 +618,16 @@ input[type="submit"] {
     margin-left: 9px;
     color: #fff;
 }
-
 .meal-title-cn {
     font-size: 20px;
     color: #3D1101;
     text-align: center;
 }
-
 .meal-title-en {
     font-size: 16px;
     color: #3D1101;
     text-align: center;
 }
-
 .meal-list {
     width: 100%;
     margin: 0 auto;
@@ -701,19 +636,17 @@ input[type="submit"] {
     padding-right: 10px;
 }
 
-
 /* .meal-list>.container {
     padding: 8px 10px 10px 10px;
 } */
-
 .center-line {
     display: block;
     width: 91px;
     /* height: 3px; */
+    
     border: 1px solid #3D1101;
     background: #3d1101;
 }
-
 .price {
     font-size: 20px;
     font-family: 'Roboto-Light';
@@ -723,7 +656,6 @@ input[type="submit"] {
     /* margin-top: 20px;
             margin-bottom: 13px; */
 }
-
 .buy {
     display: block;
     width: 100%;
@@ -735,11 +667,9 @@ input[type="submit"] {
     line-height: 2;
     margin-bottom: 10px;
 }
-
 .container>.meal:last-child {
     margin-bottom: 50px;
 }
-
 .ribbon {
     position: absolute;
     right: -5px;
@@ -750,7 +680,6 @@ input[type="submit"] {
     height: 90px;
     text-align: right;
 }
-
 .ribbon span {
     font-size: 14px;
     font-family: 'NotoSansCJKtc-Bold';
@@ -766,11 +695,11 @@ input[type="submit"] {
     background: #00e6c0;
     /*   background: linear-gradient(#9BC90D 0%, #79A70A 100%); */
     /*   box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1); */
+    
     position: absolute;
     top: 19px;
     right: -21px;
 }
-
 .ribbon span::before {
     content: "";
     position: absolute;
@@ -782,7 +711,6 @@ input[type="submit"] {
     border-bottom: 3px solid transparent;
     border-top: 3px solid #00e6c0;
 }
-
 .ribbon span::after {
     content: "";
     position: absolute;
@@ -795,16 +723,13 @@ input[type="submit"] {
     border-top: 3px solid #00e6c0;
 }
 
-
 /*logoin頁面*/
-
 .logintitle {
     font-family: 'NotoSansCJKtc-Black';
     font-size: 48px;
     color: #3D1101;
     text-align: center;
 }
-
 .login-subtitle {
     font-family: 'NotoSansCJKtc-Medium';
     font-size: 20px;
@@ -812,7 +737,6 @@ input[type="submit"] {
     text-align: center;
     margin-bottom: 35px;
 }
-
 .loginform {
     width: 300px;
     margin: 0 auto;
@@ -822,30 +746,27 @@ input[type="submit"] {
     border-top: 3px solid #FF5E45;
     margin-bottom: 50px;
 }
-
 .loginform>.container {
     min-width: 290px;
     width: 80%;
     padding: 10px;
 }
-
 .loginform>.container a {
     text-decoration: none;
     font-size: 14px;
     color: #FF5E45;
     /* float: left; */
+    
     display: block;
     width: 100%;
     text-align: left;
     margin-bottom: 30px;
     margin-top: 14px;
 }
-
 .loginform>.container>input {
     margin-bottom: 0;
     padding: 10px 9px;
 }
-
 .login {
     font-family: 'NotoSansCJKtc-Black';
     font-size: 18px;
@@ -853,23 +774,19 @@ input[type="submit"] {
     margin-bottom: 16px;
     text-align: center;
 }
-
 .loginform>.container>.btn-area {
     width: 100%;
     float: none;
     text-align: center;
 }
-
 .loginform>.container input:nth-child(3) {
     margin-bottom: 15px;
 }
-
 .loginform>.container>label {
     width: 100%;
     text-align: left;
     margin-bottom: 0;
 }
-
 #regest-btn {
     float: left;
     width: 125px;
@@ -877,21 +794,18 @@ input[type="submit"] {
     border-radius: 3px;
     /* margin-right: 30px; */
 }
-
 #login-btn {
     float: right;
     width: 125px;
     background: #F56C23;
     border-radius: 3px;
 }
-
 .user,
 .passwd,
 .repeate-passwd {
     position: relative;
     /*   display:inline-block; */
 }
-
 .user:before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -902,7 +816,6 @@ input[type="submit"] {
     top: 50%;
     transform: translateY(-50%);
 }
-
 .user input,
 .passwd input,
 .repeate-passwd input {
@@ -910,7 +823,6 @@ input[type="submit"] {
     margin-bottom: 0;
     /* padding: 5px; */
 }
-
 .passwd:before,
 .repeate-passwd:before {
     font-family: "Font Awesome 5 Free";
@@ -922,7 +834,6 @@ input[type="submit"] {
     top: 50%;
     transform: translateY(-50%);
 }
-
 .register {
     font-family: NotoSansCJKtc-Black;
     font-size: 18px;
@@ -931,38 +842,31 @@ input[type="submit"] {
     margin-top: 15px;
     margin-bottom: 16px;
 }
-
 .term {
     min-width: 290px;
     margin-bottom: 15px;
     padding: 0 15px;
 }
-
 .term p {
     width: 100%;
     font-size: 18px;
     color: #3D1101;
 }
-
 .registerform>.container {
     min-width: 0;
     padding: 0 5px;
 }
-
 .registerform>.container label {
     height: auto;
     margin-bottom: 0;
 }
-
 .repeate-passwd {
     margin-top: 12px;
     margin-bottom: 0;
 }
-
 .registerform>.container input:nth-child(3) {
     margin-top: 12px;
 }
-
 .registerform>.container a {
     font-size: 14px;
     color: #FF5E45;
@@ -971,18 +875,15 @@ input[type="submit"] {
     display: block;
     text-align: left;
 }
-
 .registerform>.container .btn-area {
     margin-bottom: 15px;
 }
-
 .box {
     background: #EFE9E7;
     box-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.16);
     border-top: 3px solid #FF5E45;
     margin-bottom: 50px;
 }
-
 #register-btn {
     width: 125px;
     float: right;
@@ -991,53 +892,62 @@ input[type="submit"] {
     border-radius: 3px;
 }
 
-
 /* .category a:nth-last-child(1) {
     color: #FFFFFF;
 } */
-
 @media(min-width:767px) {
     .container {
         max-width: 767px;
         padding: 17px 13px 15px 13px;
         text-align: center;
     }
+    
     .banner {
         background-image: url(../image/header_desktop.png);
     }
+    
     .banner>.container {
         min-width: 767px;
         padding: 123px 154px 145px 154px;
     }
+    
     br {
         display: block;
     }
+    
     #nav img {
         display: none;
     }
+    
     #nav .menu {
         display: block;
     }
+    
     .menu li {
         float: left;
         margin-left: 31px;
     }
+    
     .menu a {
         text-decoration: none;
         color: #fff;
     }
+    
     .sloganbg {
         width: 460px;
     }
+    
     .slogan-title {
         display: inline-block;
     }
+    
     .slogan-subtitle {
         padding-top: 16px;
         padding-bottom: 26px;
         margin: 0;
         font-size: 8px;
     }
+    
     .feature-title {
         position: relative;
         z-index: 1;
@@ -1046,9 +956,11 @@ input[type="submit"] {
         padding-right: 15px;
         display: inline-block;
     }
+    
     .content {
         padding: 0 30px;
     }
+    
     .intro {
         width: 31.333%;
         float: left;
@@ -1061,75 +973,91 @@ input[type="submit"] {
             .content>.intro:nth-last-child(2) {
                 padding-right: 60px;
             } */
+    
     .chief-feature {
         padding-left: 2%;
         background: #3D1101;
     }
+    
     .chief-feature-img {
         float: left;
         width: 48%;
     }
+    
     .name {
         float: left;
         width: 50%;
         height: 460px;
     }
+    
     .name>.container {
         min-width: 50%;
     }
+    
     .recommend>.container {
         padding-top: 50px;
     }
+    
     .recommend-colum {
         width: 31.3333%;
         margin-right: 1%;
         margin-left: 1%;
         float: left;
     }
+    
     .map {
         width: 50%;
         float: left;
     }
+    
     .form-table {
         width: 48%;
         margin-left: 2%;
         float: left;
         text-align: left;
     }
+    
     .intro-restaurant {
         width: 235px;
         float: left;
         margin-right: 20px;
     }
+    
     .intro-restaurant>p {
         width: 235px;
     }
+    
     .countus {
         width: 235px;
         float: left;
     }
+    
     .countus>ul {
         width: 235px;
         text-align: left;
     }
+    
     .name1 {
         margin-top: 0;
         width: 245px;
         float: right;
     }
+    
     .social-media {
         float: right;
     }
+    
     .outer hr {
         display: block;
         position: absolute;
         width: 460px;
         /* margin: 0 auto; */
         left: 50%;
-        top: 777px;
+        top: 726px;
         margin-left: -230px;
         margin-top: -230px;
     }
+    
     .meal {
         float: left;
         width: 48%;
@@ -1143,61 +1071,79 @@ input[type="submit"] {
         /* min-width: 50%; */
         /* margin: 0 auto; */
     }
+    
     .meal-img {
         max-width: none;
         /* width: 80%; */
     }
+    
     .meal-list {
         padding: 0 1% 1% 1%;
         min-height: 150px;
     }
+    
     .searcharea>.meal:nth-child(2) {
         margin-top: 0;
     }
+    
     .loginform>.container {
         width: 50%;
     }
+    
     .loginform {
         width: 50%;
         margin-right: auto;
         margin-left: auto;
     }
+    
     .registerform {
         float: left;
         width: 50%;
     }
+    
     .registerform>.container {
         min-width: 50%;
     }
+    
     .term {
         float: left;
         text-align: left;
         width: 50%;
     }
+    
     .registerform>.container label {
         text-align: left;
     }
+    
     .showmenu {
         display: none;
     }
+    
     #nav .menu {
         float: right;
         max-height: 24px;
         position: static;
         background: none;
     }
+    
     #nav .menu li {
         float: left;
+        border-bottom: 0;
+    }
+    
+    #nav .menu li:hover {
+        background: none;
     }
 }
-
 @media(min-width:400px) and (max-width:584px) {
     .meal {
         min-width: 350px;
     }
+    
     .meal-img {
         width: 100%;
     }
+    
     .outer hr {
         display: none;
     }
@@ -1206,26 +1152,21 @@ input[type="submit"] {
         } */
 }
 
-
 }
 @media(min-width:585px) and (max-width:766px) {
     .meal {
         min-width: 400px;
     }
-    
     .meal-img {
         min-width: 100%;
     }
-    
     .outer hr {
         display: none;
     }
-    
     .loginform {
         width: 50%;
         margin: 0 auto;
     }
-    
     .loginform>.container {
         width: 50%;
     }
@@ -1234,12 +1175,10 @@ input[type="submit"] {
     .header {
         z-index: 3;
     }
-    
     .container {
         min-width: 1024px;
         padding: 16px 48px 16px 42px;
     }
-    
     .banner>.container {
         min-width: 1024px;
         padding-top: 123px;
@@ -1247,54 +1186,45 @@ input[type="submit"] {
         padding-left: 282px;
         padding-right: 282px;
     }
-    
     .chief-feature {
         padding-left: 4%;
         background: #3D1101;
     }
-    
     .chief-feature-img {
         float: left;
         width: 48%;
     }
-    
     .name {
         float: left;
         width: 50%;
         height: 460px;
     }
-    
     .name>.container {
         min-width: 35%;
     }
-    
     .map {
         width: 50%;
         background-repeat: no-repeat;
         background-position: center;
         margin: 0 auto;
     }
-    
     .footer>.container {
         padding: 100px 10px 50px 43px;
     }
-    
     .name1 {
         /* float: left; */
+        
         width: 47%;
     }
-    
     .meal-category {
         float: left;
         width: 25%;
     }
-    
     .searcharea {
         width: 73%;
         float: right;
         margin-top: 0;
     }
-    
     .meal {
         width: 31.333%;
         margin-top: 26px;
@@ -1304,36 +1234,29 @@ input[type="submit"] {
         /* margin-top: 20px;
                 margin-right: 12px; */
     }
-    
     .meal-list {
         min-height: 140px;
     }
-    
     .meal-title-en {
         font-size: 12px;
     }
-    
     .out-area {
         width: 70%;
         float: left;
     }
-    
     .buy-area {
         width: 30%;
         float: left;
         margin-top: 0;
     }
-    
     .loginform {
         width: 30%;
         margin-right: auto;
         margin-left: auto;
     }
-    
     .loginform>.container {
         width: 30%;
     }
-    
     .box {
         width: 80%;
         margin-left: auto;
