@@ -498,7 +498,7 @@ input[type="submit"] {
     line-height: 1.4;
 }
 
-.name1 {
+.sublogo {
     width: 100%;
     font-size: 49px;
     margin-top: 30px;
@@ -506,7 +506,7 @@ input[type="submit"] {
     float: right;
 }
 
-.name1>img {
+.sublogo>img {
     /* width: 245px;
             height: 49px; */
     float: right;
@@ -1139,7 +1139,7 @@ input[type="submit"] {
         width: 235px;
         text-align: left;
     }
-    .name1 {
+    .sublogo {
         margin-top: 0;
         width: 245px;
         float: right;
@@ -1307,7 +1307,7 @@ input[type="submit"] {
         padding: 100px 10px 50px 43px;
     }
     
-    .name1 {
+    .sublogo {
         /* float: left; */
         width: 47%;
     }
