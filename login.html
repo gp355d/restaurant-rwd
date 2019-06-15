@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/normailze.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/web.js"></script>
     <title>六角西餐廳</title>
 </head>
 
@@ -15,16 +17,30 @@
     <div class="header">
         <div class="container clearfix">
             <div id="logo">
-                <a href="#">
-                    <img src="/image/logo_w(null).svg" alt=""></a>
+
+                <a href="index.html">
+                    <h1>六角西餐廳</h1>
+                </a>
+
+
+
+
 
             </div>
             <div id="nav">
-                <img src="http://dummyimage.com/21x24/eee/ddd/" alt="">
+                <a class="showmenu">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </a>
+                <!-- <a class="" href="">show</a> -->
                 <ul class="menu clearfix">
-                    <li><a href="#">特色</a></li>
-                    <li><a href="#">主廚</a></li>
-                    <li><a href="#">地圖</a></li>
+                    <li><a href="index.html">特色</a></li>
+                    <li><a href="index.html">主廚</a></li>
+                    <li><a href="index.html">地圖</a></li>
+                    <li>
+                        <a href="order.html">線上訂餐</a></li>
+                    <li><a href="login.html">會員登入</a></li>
                 </ul>
             </div>
 
@@ -65,7 +81,7 @@
                     <a href="#">忘記密碼？</a>
 
                     <div class="btn-area clearfix">
-                        <input type="button" id="regest-btn" value="註冊">
+                        <input type="button" id="regest-btn" value="註冊" onclick="location.href='register.html'">
                         <input type="button" id="login-btn" value="登入">
                     </div>
                 </div>

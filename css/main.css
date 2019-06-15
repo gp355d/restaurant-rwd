@@ -20,7 +20,9 @@ p {
     margin: 0;
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
     width: 100%;
     height: 32px;
     background: #FFFFFF;
@@ -72,14 +74,12 @@ label {
     float: left;
 }
 
-#logo h1 a {
+#logo a h1 {
     width: 120px;
     height: 24px;
     background: url(/image/logo_w\(null\).svg);
     /* no-repeat; */
     display: block;
-    margin-top: 16px;
-    margin-left: 42px;
     text-indent: 101%;
     overflow: hidden;
     white-space: nowrap;
@@ -108,6 +108,7 @@ label {
 #nav .menu li {
     float: none;
     border-bottom: 1px dashed white;
+    line-height: 2;
 }
 
 #nav .menu li:hover {
@@ -124,11 +125,6 @@ label {
 #nav .menu a:hover {
     color: #DB4437;
 }
-
-
-/* #nav li a:hover {
-    background: #69ca62;
-} */
 
 .showmenu {
     /* display: block; */
@@ -150,53 +146,6 @@ label {
     /* display: block; */
     max-height: 500px !important;
 }
-
-
-/* .show-menu1 {
-    display: block;
-}
-
-.show-menu1:hover {
-    display: none;
-    color: green;
-} */
-
-
-/* .menu1 {
-    display: none;
-    position: absolute;
-    left: -12px;
-    top: 61px;
-    min-height: 200px;
-    overflow: hidden;
-    transition: max-height 2.3s;
-}
-
-.menu1 li {
-    float: none;
-    width: 200px;
-    text-align: center;
-} */
-
-
-/* 
-.menu1 li a {
-    display: block;
-}
-
-.hamburger-menu {
-    background: none;
-    border: none;
-    display: inline-block;
-}
-
-.hamburger-menu .icon-bar {
-    background-color: #ff4c4d;
-    display: block;
-    height: 4px;
-    margin: 0 auto 4px;
-    width: 30px;
-} */
 
 
 /*banner版面*/
@@ -431,6 +380,15 @@ label:nth-first-child(2) {
 
 .form-table>.container {
     padding-bottom: 50px;
+}
+
+input.reset-btn:hover,
+input.send-btn:hover,
+#regest-btn:hover,
+#login-btn:hover,
+#register-btn:hover {
+    background: rgba(61, 17, 0, 0.75);
+    color: red;
 }
 
 input[type="button"],
@@ -743,11 +701,6 @@ input[type="submit"] {
     padding-right: 10px;
 }
 
-
-/* .meal-list>.container {
-    padding: 8px 10px 10px 10px;
-} */
-
 .center-line {
     display: block;
     width: 91px;
@@ -778,6 +731,11 @@ input[type="submit"] {
     margin-bottom: 10px;
 }
 
+.buy:hover {
+    color: red;
+    background: rgba(61, 17, 0, 0.35);
+}
+
 .container>.meal:last-child {
     margin-bottom: 50px;
 }
@@ -806,8 +764,6 @@ input[type="submit"] {
     width: 100px;
     display: block;
     background: #00e6c0;
-    /*   background: linear-gradient(#9BC90D 0%, #79A70A 100%); */
-    /*   box-shadow: 0 3px 10px -5px rgba(0, 0, 0, 1); */
     position: absolute;
     top: 19px;
     right: -21px;
@@ -1044,6 +1000,11 @@ input[type="submit"] {
     text-align: left;
 }
 
+.registerform>.container a:hover,
+.loginform>.container a:hover {
+    color: red;
+}
+
 .registerform>.container .btn-area {
     margin-bottom: 15px;
 }
@@ -1127,12 +1088,6 @@ input[type="submit"] {
         margin-right: 1%;
         margin-left: 1%;
     }
-    /* .content>.intro:nth-last-child(3) {
-                padding-right: 60px;
-            }
-            .content>.intro:nth-last-child(2) {
-                padding-right: 60px;
-            } */
     .chief-feature {
         padding-left: 2%;
         background: #3D1101;
@@ -1277,9 +1232,6 @@ input[type="submit"] {
     .outer hr {
         display: none;
     }
-    /* .loginform>.container {
-            width: 80%;
-        } */
 }
 
 
@@ -1377,8 +1329,6 @@ input[type="submit"] {
         margin-left: 1%;
         min-height: 230px;
         z-index: 2;
-        /* margin-top: 20px;
-                margin-right: 12px; */
     }
     
     .meal-list {
