@@ -132,6 +132,7 @@ label {
     background: none;
     border: none;
     display: inline-block;
+    cursor: pointer;
 }
 
 .showmenu .icon-bar {
@@ -389,6 +390,7 @@ input.send-btn:hover,
 #register-btn:hover {
     background: rgba(61, 17, 0, 0.75);
     color: red;
+    cursor: pointer;
 }
 
 input[type="button"],
