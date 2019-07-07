@@ -77,7 +77,7 @@ label {
 #logo a h1 {
     width: 120px;
     height: 24px;
-    background: url(/image/logo_w.svg);
+    background: url(../image/logo_w.svg);
     /* no-repeat; */
     display: block;
     text-indent: 101%;
